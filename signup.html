@@ -26,7 +26,10 @@
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">X</label>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
@@ -37,7 +40,39 @@
     </header>
 
     <!-- Main Content -->
-    <main>Main Content</main>
+    <main>
+        <section id="signup"> 
+            <form id="signup-form" method="post" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heart-pulse"></i> Let's Get You Signed Up!</h2>
+                <label for="first-name">First Name</label>
+                <input id="first-name" type="text" name="first_name" class="text-input" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text" name="last_name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input id="email-address" type="email" name="email_address" class="text-input" required>
+                <br>
+                <div id="running-preference" class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input id="road" type="radio" name="running_preference" value="road" checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input id="trail" type="radio" name="running_preference" value="trail">
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input id="both" type="radio" name="running_preference" value="both">
+                    </div>
+                </div>
+                <input type="submit" class="join-button" value="Let's Run!">
+
+
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>Footer</footer>
